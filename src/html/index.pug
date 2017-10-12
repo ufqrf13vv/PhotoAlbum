@@ -1,0 +1,45 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title photo-album
+		link(rel='stylesheet', href='css/normalize.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+		link(rel='stylesheet', href='css/style.css')
+
+	body
+		header.header
+			.container
+				.wrapper
+					.header__wrapper
+						.personal
+							.personal__img-wrapper
+								img.personal__image(src="")
+							.personal__description
+								.personal__header Антон Черепов
+								.personal__text Я веб разработчик. Мне 24 года. Люблю путешествия, кодинг, фриланс и активный отдых.
+						.controls
+							a.controls__link(href="javascript:void(0);")
+								include ../img/icons/off.svg
+								.controls__link-text Выйти
+							a.controls__link(href="javascript:void(0);")
+								include ../img/icons/edit.svg
+								.controls__link-text Редактировать
+						.social-icons
+							a.social-icon(href="javascript:void(0);")
+								include ../img/icons/soc_vk.svg
+							a.social-icon(href="javascript:void(0);")
+								include ../img/icons/soc_fb.svg
+							a.social-icon(href="javascript:void(0);")
+								include ../img/icons/soc_twitter.svg
+							a.social-icon(href="javascript:void(0);")
+								include ../img/icons/social_google.svg
+							a.social-icon(href="javascript:void(0);")
+								include ../img/icons/soc_email.svg
+
+		form.search
+			.container
+				.search__wrapper
+					input.search__input(type="text", placeholder="Исследовать мир")
+					input.search__submit(type="submit", value="")

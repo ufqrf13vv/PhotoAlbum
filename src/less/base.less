@@ -1,0 +1,50 @@
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	height: 100%;
+	font-family: @pxlight;
+	font-size: 14px;
+	overflow-x: hidden;
+}
+
+img {
+	display: block;
+}
+
+.container {
+	margin: 0 auto;
+
+	@media @extrasmall {
+		width: @xs;
+		padding: 0;
+	}
+
+	@media @small {
+		width: @sm;
+		padding: 0 15px;
+	}
+
+	@media @medium {
+		width: @md;
+	}
+
+	@media @large {
+		width: @lg;
+	}
+}
+
+input:focus {
+	outline: none;
+}
+
+.wrapper {
+	padding: 0 10px;
+}
